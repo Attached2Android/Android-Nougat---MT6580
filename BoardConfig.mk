@@ -127,7 +127,7 @@ POLICYVERS := 29
 BOARD_SECCOMP_POLICY += device/leagoo/z5/seccomp
 
 BLOCK_BASED_OTA := false
-TARGET_LDPRELOAD += libxlog.so:libmtk_symbols.so:libmtk_shyms.soS
+TARGET_LDPRELOAD += libxlog.so:libmtk_symbols.so:libmtk_shyms.so
 
 # Deodex ? = false
 
