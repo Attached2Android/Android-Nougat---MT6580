@@ -127,11 +127,16 @@ POLICYVERS := 29
 BOARD_SECCOMP_POLICY += device/leagoo/z5/seccomp
 
 BLOCK_BASED_OTA := false
-TARGET_LDPRELOAD += libxlog.so:libmtk_symbols.so:libmtk_shyms.so
+TARGET_LDPRELOAD += libxlog.so:libmtk_symbols.so
 
-# Deodex ? = false
+##################################
+#    **Odex Configuration**
+#      true = Odexed Rom
+#      false = Deodexed Rom
+#      null = Rom source decides
+##################################
 
-ODEX := false
+ODEX := null
 
 ifeq ($(ODEX),true)
     WITH_DEXPREOPT := true
